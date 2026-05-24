@@ -14,7 +14,8 @@ void main(List<String> arguments) {
 
   final wallet = Wallet(name: 'PayTm');
 
-  Printer(upi).printPayments();
-  Printer(card).printPayments();
-  Printer(wallet).printPayments();
+  final printer = Printer();
+  printer.printPayments(upi);
+  printer.printPayments(card);
+  printer.printPayments(wallet);
 }
