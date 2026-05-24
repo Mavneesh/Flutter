@@ -1,8 +1,7 @@
 import 'package:solid_principles/payments.dart';
 
-//Circle class is having only concern about the circle area and know its shape name.
+/// UPI payment: single responsibility for UPI-specific payment data.
 class Upi implements Payments {
-  // use _ to make properties private eg: _radius
   final String _vpa;
 
   Upi({required String vpa}) : _vpa = vpa;

@@ -1,15 +1,14 @@
-//Rectangle class is having only concern about the circle area and know its shape name.
 import 'package:solid_principles/payments.dart';
 
+/// Wallet payment: single responsibility for wallet-specific payment data.
 class Wallet implements Payments {
-  // use _ to make properties private eg: _length
   final String _name;
 
   Wallet({required String name}) : _name = name;
 
   @override
   String pay() {
-    return _name;
+    return 'Pay with wallet: $_name';
   }
 
   @override
