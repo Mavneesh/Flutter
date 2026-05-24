@@ -1,8 +1,7 @@
-//Rectangle class is having only concern about the circle area and know its shape name.
 import 'package:solid_principles/payments.dart';
 
+/// Card payment: single responsibility for card-specific payment data.
 class Card implements Payments {
-  // use _ to make properties private eg: _cardNumber
   final String _number;
   final String _expiry;
   final String _cvv;
